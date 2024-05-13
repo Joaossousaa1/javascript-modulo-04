@@ -8,7 +8,7 @@ function Book(title, pages, tags, author) {
     this.addOnStock = function addOnStock(quantity) {
         this.inStock += quantity
     }
-    this.addPage = (quantity) => {
+    this.addPage = (quantity) =>{
         this.pages += quantity
     }
 }
