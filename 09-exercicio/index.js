@@ -1,7 +1,8 @@
-const Author = require("./Author.js");
-const Post = require("./Post.js");
+const Author = require("./Author");
 
-const joao = new Author('Jhon')
-joao.addPost('The flash', 'série mt boa', 'zoom era pra solar todos eles')
-joao.addPost('Arrow', 'seríe mt ruim', 'arqueiro fraco')
-console.log(joao)
+const jhon = new Author('Jhon')
+const post = jhon.writePost('Assunto')
+post.addComment('lucas', 'Comment 1')
+
+console.log(jhon)
+console.log(post)
