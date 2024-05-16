@@ -2,15 +2,16 @@ const Post = require('./Post.js')
 const Comment = require("./Comment.js")
 
 class Author {
-    constructor (authorName) {
-        this.authorName = authorName
+    constructor (name) {
+        this.name = name
+        this.posts = []
     }
 
-    addPost(postName, ...comments) {
-        this.postName = postName
-        this.comments = comments
-        this.listPosts = []
-        this.listPosts.push(this.postName, this.comments)
+    writePost(tile, body) {
+        const post = new Post(tile, body, this)
+        this.posts.push(post)
+
+        return post
     }
 }
 

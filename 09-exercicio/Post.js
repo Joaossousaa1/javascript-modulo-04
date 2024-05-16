@@ -2,15 +2,17 @@ const Author = require("./Author.js");
 const Comment = require("./Comment.js");
 
 class Post {
-    constructor (authorName, postName, ...comments) {
-        this.authorName = new Author(authorName);
-        this.postName = postName;
-        this.comments = new Comment(...comments)
+    constructor (title, body, author) {
+        this.title = title;
+        this.body = body;
+        this.author = author;
+        this.comments = []
+        this.createdAt = new Date();        
     }
 
-    addComment(comment) {
-        this.comments.comments.push(comment)
+    addComment(username, content) {
+        this.comments.push(new Comment(username, content));
     }
-}
+} 
 
 module.exports = Post;
