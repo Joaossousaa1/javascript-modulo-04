@@ -2,7 +2,7 @@ const Passenger = require("./Passenger");
 
 class Flight {
     constructor (number, origin, destination, date) {
-        this.number = number;
+        this.number = number
         this.origin = origin;
         this.destination = destination;
         this.date = date;
