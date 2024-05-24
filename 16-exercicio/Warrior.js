@@ -10,11 +10,7 @@ class Warrior extends Character {
 
     attackTarget(character) {
         if (this.position === 'Attack') {
-            const damage = this.attack - character.defense
-            console.log(`${this.name} attacked and dealt ${damage} to ${character.name}`)
-            character.life = character.life - damage
-
-            return damage
+            super.attackTarget(character)
         } else {
             console.log(`You cannot attack, your position is defense.`)
         }
@@ -23,10 +19,10 @@ class Warrior extends Character {
     changePosition() {
         if (this.position === 'Attack') {
             this.position = 'Defense'
-            this.shield += this.defense
+            this.defense += this.shield             
         } else {
             this.position = 'Attack'
-            this.shield = 0
+            this.defense -= this.shield
         }
        
     }

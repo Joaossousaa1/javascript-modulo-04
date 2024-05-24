@@ -8,7 +8,7 @@ class Thief extends Character {
     attackTarget(character) {
         const damage = (this.attack * 2) - character.defense
         console.log(`${this.name} attacked and dealt ${damage} to ${character.name}`)
-        character.life = character.life - damage
+        character.life -= damage
 
         return damage
     }

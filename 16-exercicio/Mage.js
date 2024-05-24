@@ -9,7 +9,7 @@ class Mage extends Character {
     attackTarget(character) {
         const damage = (this.attack + this.magic) - character.defense
         console.log(`${this.name} attacked and dealt ${damage} to ${character.name}`)
-        character.life = character.life - damage
+        character.life -= damage
 
         return damage
     }
