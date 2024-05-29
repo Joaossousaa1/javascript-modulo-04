@@ -1,3 +1,0 @@
-**O que é uma variável?**
-Variável é utilizada quando queremos armazenar um valor na memória do computador, com isso, nós declaramos uma variável e colocamos um valor nela. Assim é possível utiliza-la quando precisarmos.
- Chamamos este espaço alocado na [[Memória]] de **variável**, porque o valor armazenado neste espaço de memória pode ser alterado ao longo do tempo, ou seja, o valor ali alocado é "variável" ao longo do tempo. Diferente das **[[Constantes]]**, que é um espaço reservado na memória para armazenar um valor que não muda com o tempo. Por exemplo, o valor PI (3.14159265359...) que nunca vai mudar!
