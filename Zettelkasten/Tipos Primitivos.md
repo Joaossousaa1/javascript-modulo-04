@@ -1,4 +1,0 @@
- **O que são tipos de dados primitivos?**
- Nos [[Algoritmos]] criados para realizar tarefas na computação utilizamos [[Variáveis]]. O que é variável e constante?") para manipular dados, por exemplo: nome, idade, altura, peso, data de nascimento, sexo, saldo, etc. Para otimizar a utilização da memória, cada variável armazena apenas um tipo de dados.
-
-A variável **nome**, deve armazenar textos, já a variável **idade** deve armazenar apenas números inteiros (sem casa decimal), na variável **sexo** podemos armazenar apenas um caractere ("M" ou "F"). Seria correto armazenarmos o valor "M" na variável **idade**? Não né, por isso devemos especificar em nossos algoritmos o tipo de cada variável.
