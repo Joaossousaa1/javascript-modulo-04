@@ -1,0 +1,1 @@
+Uma constante é um identificador (nome) para um valor simples. Como o nome sugere, esse valor não pode mudar durante a execução do script. As constantes diferenciam maiúsculas de minúsculas. Por convenção, identificadores de constantes são sempre em maiúsculas.
